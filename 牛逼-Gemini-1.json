@@ -1,0 +1,854 @@
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "0.0.0.0",
+      "listen_port": 7890
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "🐮牛逼",
+      "outbounds": [
+        "自动选择",
+        "故障转移",
+        "DIRECT",
+        "订阅地址失效",
+        "请重新复制导入",
+        "🇸🇬AWS新加坡02|电信优化",
+        "🇸🇬AWS新加坡03|电信优化|流媒体解锁",
+        "🇯🇵AWS日本02|流媒体解锁",
+        "🇭🇰香港HKT02|hy2",
+        "🇭🇰香港HKT03",
+        "🇭🇰香港HKT05|v6入口",
+        "🇭🇰香港HKT08|hy2",
+        "🇭🇰香港HKT09",
+        "🇭🇰香港HKT11|v6入口",
+        "🇸🇬新加坡02|hy2|流媒体解锁|AI",
+        "🇸🇬新加坡03|流媒体解锁|AI",
+        "🇸🇬新加坡05|流媒体解锁|AI|v6入口",
+        "🇯🇵日本02|hy2|流媒体解锁|AI",
+        "🇯🇵日本03|流媒体解锁|AI",
+        "🇰🇷韩国01|家宽",
+        "🇨🇳台湾01|Google play|AI|移动优化",
+        "🇨🇳台湾03|Google play|AI|移动优化",
+        "🇺🇸亚特兰大01|流媒体解锁|AI|移动优化",
+        "🇺🇸凤凰城03|流媒体解锁|AI|移动优化",
+        "🇨🇦加拿大01|流媒体解锁|AI|移动优化",
+        "🇩🇪德国01|移动优化",
+        "🇬🇧英国01|流媒体解锁|AI|移动优化",
+        "❗如果只显示此节点|0.1x",
+        "❗是客户端太旧导致|0.1x",
+        "❗请到网站使用教程|0.1x",
+        "❗更新一下客户端|0.1x"
+      ],
+      "default": "自动选择"
+    },
+    {
+      "type": "urltest",
+      "tag": "自动选择",
+      "outbounds": [
+        "订阅地址失效",
+        "请重新复制导入",
+        "🇸🇬AWS新加坡02|电信优化",
+        "🇸🇬AWS新加坡03|电信优化|流媒体解锁",
+        "🇯🇵AWS日本02|流媒体解锁",
+        "🇭🇰香港HKT02|hy2",
+        "🇭🇰香港HKT03",
+        "🇭🇰香港HKT05|v6入口",
+        "🇭🇰香港HKT08|hy2",
+        "🇭🇰香港HKT09",
+        "🇭🇰香港HKT11|v6入口",
+        "🇸🇬新加坡02|hy2|流媒体解锁|AI",
+        "🇸🇬新加坡03|流媒体解锁|AI",
+        "🇸🇬新加坡05|流媒体解锁|AI|v6入口",
+        "🇯🇵日本02|hy2|流媒体解锁|AI",
+        "🇯🇵日本03|流媒体解锁|AI",
+        "🇰🇷韩国01|家宽",
+        "🇨🇳台湾01|Google play|AI|移动优化",
+        "🇨🇳台湾03|Google play|AI|移动优化",
+        "🇺🇸亚特兰大01|流媒体解锁|AI|移动优化",
+        "🇺🇸凤凰城03|流媒体解锁|AI|移动优化",
+        "🇨🇦加拿大01|流媒体解锁|AI|移动优化",
+        "🇩🇪德国01|移动优化",
+        "🇬🇧英国01|流媒体解锁|AI|移动优化",
+        "❗如果只显示此节点|0.1x",
+        "❗是客户端太旧导致|0.1x",
+        "❗请到网站使用教程|0.1x",
+        "❗更新一下客户端|0.1x"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "5m",
+      "tolerance": 50
+    },
+    {
+      "type": "urltest",
+      "tag": "故障转移",
+      "outbounds": [
+        "订阅地址失效",
+        "请重新复制导入",
+        "🇸🇬AWS新加坡02|电信优化",
+        "🇸🇬AWS新加坡03|电信优化|流媒体解锁",
+        "🇯🇵AWS日本02|流媒体解锁",
+        "🇭🇰香港HKT02|hy2",
+        "🇭🇰香港HKT03",
+        "🇭🇰香港HKT05|v6入口",
+        "🇭🇰香港HKT08|hy2",
+        "🇭🇰香港HKT09",
+        "🇭🇰香港HKT11|v6入口",
+        "🇸🇬新加坡02|hy2|流媒体解锁|AI",
+        "🇸🇬新加坡03|流媒体解锁|AI",
+        "🇸🇬新加坡05|流媒体解锁|AI|v6入口",
+        "🇯🇵日本02|hy2|流媒体解锁|AI",
+        "🇯🇵日本03|流媒体解锁|AI",
+        "🇰🇷韩国01|家宽",
+        "🇨🇳台湾01|Google play|AI|移动优化",
+        "🇨🇳台湾03|Google play|AI|移动优化",
+        "🇺🇸亚特兰大01|流媒体解锁|AI|移动优化",
+        "🇺🇸凤凰城03|流媒体解锁|AI|移动优化",
+        "🇨🇦加拿大01|流媒体解锁|AI|移动优化",
+        "🇩🇪德国01|移动优化",
+        "🇬🇧英国01|流媒体解锁|AI|移动优化",
+        "❗如果只显示此节点|0.1x",
+        "❗是客户端太旧导致|0.1x",
+        "❗请到网站使用教程|0.1x",
+        "❗更新一下客户端|0.1x"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "5m"
+    },
+    {
+      "type": "vless",
+      "tag": "订阅地址失效",
+      "server": "185.229.222.216",
+      "server_port": 443,
+      "uuid": "8d816aac-d085-4196-aa13-492f54d43133",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.lamer.com.sg",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CBkV6zFn1TL1ZsmNRAFjtQLS4b0HILlSaOqEyB7ZnkA",
+          "short_id": "520980f1e04645"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "请重新复制导入",
+      "server": "185.229.222.21",
+      "server_port": 443,
+      "uuid": "8d816aac-d085-4196-aa13-492f54d43133",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "zh-hk.vuejs.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "38tmeUIWru-CqbwS4Yf6Ic08QbvM9PP8CjbGVwEA1hw",
+          "short_id": "c144680bc4d809"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬AWS新加坡02|电信优化",
+      "server": "asg2.jueduibupao.top",
+      "server_port": 7000,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "8d816aac-d085-4196-aa13-492f54d43133",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬AWS新加坡03|电信优化|流媒体解锁",
+      "server": "asg3.jueduibupao.top",
+      "server_port": 7000,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "8d816aac-d085-4196-aa13-492f54d43133",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵AWS日本02|流媒体解锁",
+      "server": "ajp2.jueduibupao.top",
+      "server_port": 7000,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "8d816aac-d085-4196-aa13-492f54d43133",
+      "tls": {
+        "enabled": true,
+        "server_name": "ajp2.jueduibupao.top",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰香港HKT02|hy2",
+      "server": "ff.xxxyun.top",
+      "server_port": 22001,
+      "password": "8d816aac-d085-4196-aa13-492f54d43133",
+      "up_mbps": 200,
+      "down_mbps": 200,
+      "tls": {
+        "enabled": true,
+        "server_name": "atlhk1.jueduibupao.top",
+        "insecure": false
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇭🇰香港HKT03",
+      "server": "dafeizhu.xxxyun.top",
+      "server_port": 55001,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "8d816aac-d085-4196-aa13-492f54d43133",
+      "tls": {
+        "enabled": true,
+        "server_name": "atlhk1.jueduibupao.top"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇭🇰香港HKT05|v6入口",
+      "server": "shouzhuzhu.niubifast.cc",
+      "server_port": 45001,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "8d816aac-d085-4196-aa13-492f54d43133",
+      "tls": {
+        "enabled": true,
+        "server_name": "atlhk1.jueduibupao.top"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰香港HKT08|hy2",
+      "server": "ff.xxxyun.top",
+      "server_port": 22002,
+      "password": "8d816aac-d085-4196-aa13-492f54d43133",
+      "up_mbps": 200,
+      "down_mbps": 200,
+      "tls": {
+        "enabled": true,
+        "server_name": "atlhk2.jueduibupao.top",
+        "insecure": false
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇭🇰香港HKT09",
+      "server": "dafeizhu.xxxyun.top",
+      "server_port": 55102,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "8d816aac-d085-4196-aa13-492f54d43133",
+      "tls": {
+        "enabled": true,
+        "server_name": "atlhk2.jueduibupao.top"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇭🇰香港HKT11|v6入口",
+      "server": "shouzhuzhu.niubifast.cc",
+      "server_port": 45102,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "8d816aac-d085-4196-aa13-492f54d43133",
+      "tls": {
+        "enabled": true,
+        "server_name": "atlhk2.jueduibupao.top"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇬新加坡02|hy2|流媒体解锁|AI",
+      "server": "ff.xxxyun.top",
+      "server_port": 22003,
+      "password": "8d816aac-d085-4196-aa13-492f54d43133",
+      "up_mbps": 200,
+      "down_mbps": 200,
+      "tls": {
+        "enabled": true,
+        "server_name": "atlsg1.jueduibupao.top",
+        "insecure": false
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬新加坡03|流媒体解锁|AI",
+      "server": "dafeizhu.xxxyun.top",
+      "server_port": 55003,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "8d816aac-d085-4196-aa13-492f54d43133",
+      "tls": {
+        "enabled": true,
+        "server_name": "atlsg1.jueduibupao.top"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬新加坡05|流媒体解锁|AI|v6入口",
+      "server": "shouzhuzhu.niubifast.cc",
+      "server_port": 45003,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "8d816aac-d085-4196-aa13-492f54d43133",
+      "tls": {
+        "enabled": true,
+        "server_name": "atlsg1.jueduibupao.top"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇯🇵日本02|hy2|流媒体解锁|AI",
+      "server": "ff.xxxyun.top",
+      "server_port": 22004,
+      "password": "8d816aac-d085-4196-aa13-492f54d43133",
+      "up_mbps": 200,
+      "down_mbps": 200,
+      "tls": {
+        "enabled": true,
+        "server_name": "atljp1.jueduibupao.top",
+        "insecure": false
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵日本03|流媒体解锁|AI",
+      "server": "dafeizhu.xxxyun.top",
+      "server_port": 55004,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "8d816aac-d085-4196-aa13-492f54d43133",
+      "tls": {
+        "enabled": true,
+        "server_name": "atljp1.jueduibupao.top"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷韩国01|家宽",
+      "server": "dafeizhu.xxxyun.top",
+      "server_port": 55014,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "8d816aac-d085-4196-aa13-492f54d43133",
+      "tls": {
+        "enabled": true,
+        "server_name": "atlkr1.jueduibupao.top"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇳台湾01|Google play|AI|移动优化",
+      "server": "dafeizhu.xxxyun.top",
+      "server_port": 55005,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "8d816aac-d085-4196-aa13-492f54d43133",
+      "tls": {
+        "enabled": true,
+        "server_name": "tw2.jueduibupao.top"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇳台湾03|Google play|AI|移动优化",
+      "server": "dafeizhu.xxxyun.top",
+      "server_port": 55006,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "8d816aac-d085-4196-aa13-492f54d43133",
+      "tls": {
+        "enabled": true,
+        "server_name": "tw3.jueduibupao.top"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸亚特兰大01|流媒体解锁|AI|移动优化",
+      "server": "dafeizhu.xxxyun.top",
+      "server_port": 55007,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "8d816aac-d085-4196-aa13-492f54d43133",
+      "tls": {
+        "enabled": true,
+        "server_name": "atlus1.jueduibupao.top"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸凤凰城03|流媒体解锁|AI|移动优化",
+      "server": "dafeizhu.xxxyun.top",
+      "server_port": 55008,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "8d816aac-d085-4196-aa13-492f54d43133",
+      "tls": {
+        "enabled": true,
+        "server_name": "atlus2.jueduibupao.top"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦加拿大01|流媒体解锁|AI|移动优化",
+      "server": "dafeizhu.xxxyun.top",
+      "server_port": 55011,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "8d816aac-d085-4196-aa13-492f54d43133",
+      "tls": {
+        "enabled": true,
+        "server_name": "atlca1.jueduibupao.top"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪德国01|移动优化",
+      "server": "dafeizhu.xxxyun.top",
+      "server_port": 55009,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "8d816aac-d085-4196-aa13-492f54d43133",
+      "tls": {
+        "enabled": true,
+        "server_name": "atlde.jueduibupao.top"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧英国01|流媒体解锁|AI|移动优化",
+      "server": "dafeizhu.xxxyun.top",
+      "server_port": 55010,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "8d816aac-d085-4196-aa13-492f54d43133",
+      "tls": {
+        "enabled": true,
+        "server_name": "atluk.jueduibupao.top"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "❗如果只显示此节点|0.1x",
+      "server": "mugen11.6bnw.top",
+      "server_port": 8080,
+      "uuid": "8d816aac-d085-4196-aa13-492f54d43133",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "mugen11.6bnw.top"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "❗是客户端太旧导致|0.1x",
+      "server": "bestcf.top",
+      "server_port": 8080,
+      "uuid": "8d816aac-d085-4196-aa13-492f54d43133",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "buyvmus2.6bnw.top"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "❗请到网站使用教程|0.1x",
+      "server": "mugen33.6bnw.top",
+      "server_port": 8080,
+      "uuid": "8d816aac-d085-4196-aa13-492f54d43133",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "buyvmus2.6bnw.top"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "❗更新一下客户端|0.1x",
+      "server": "mugen44.6bnw.top",
+      "server_port": 8080,
+      "uuid": "8d816aac-d085-4196-aa13-492f54d43133",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "buyvmus2.6bnw.top"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "DIRECT"
+    },
+    {
+      "type": "block",
+      "tag": "REJECT"
+    }
+  ],
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns-remote",
+        "address": "https://dns.google/dns-query",
+        "detour": "🐮牛逼"
+      },
+      {
+        "tag": "dns-local",
+        "address": "223.5.5.5",
+        "detour": "DIRECT"
+      },
+      {
+        "tag": "dns-fakeip",
+        "address": "fakeip"
+      }
+    ],
+    "rules": [
+      {
+        "outbound": "any",
+        "server": "dns-local"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "dns-fakeip"
+      }
+    ],
+    "fakeip": {
+      "enabled": true,
+      "inet4_range": "198.18.0.0/15"
+    }
+  },
+  "route": {
+    "auto_detect_interface": true,
+    "final": "🐮牛逼",
+    "rules": [
+      {
+        "domain": [
+          "127.0.0.1",
+          "injections.adguard.org",
+          "local.adguard.org",
+          "cn.bing.com",
+          "safebrowsing.urlsec.qq.com",
+          "safebrowsing.googleapis.com",
+          "cdn.hockeyapp.net"
+        ],
+        "outbound": "DIRECT"
+      },
+      {
+        "domain_keyword": [
+          "admarvel",
+          "admaster",
+          "adsage",
+          "adsmogo",
+          "adsrvmedia",
+          "adwords",
+          "adservice",
+          "domob",
+          "duomeng",
+          "dwtrack",
+          "guanggao",
+          "lianmeng",
+          "mopub",
+          "omgmta",
+          "openx",
+          "partnerad",
+          "pingfore",
+          "supersonicads",
+          "uedas",
+          "umeng",
+          "usage",
+          "wlmonitor",
+          "zjtoolbar"
+        ],
+        "outbound": "REJECT"
+      },
+      {
+        "domain_suffix": [
+          "appsflyer.com",
+          "doubleclick.net",
+          "mmstat.com",
+          "vungle.com"
+        ],
+        "outbound": "REJECT"
+      },
+      {
+        "domain": [
+          "developer.apple.com",
+          "testflight.apple.com",
+          "sandbox.itunes.apple.com",
+          "itunes.apple.com",
+          "cvws.icloud-content.com",
+          "ocsp.apple.com"
+        ],
+        "outbound": "🐮牛逼"
+      },
+      {
+        "domain_keyword": [
+          "google",
+          "gmail",
+          "youtube",
+          "facebook",
+          "twitter",
+          "instagram",
+          "github",
+          "openai",
+          "anthropic",
+          "telegram",
+          "whatsapp",
+          "netflix",
+          "spotify",
+          "amazon",
+          "dropbox",
+          "blogspot"
+        ],
+        "outbound": "🐮牛逼"
+      },
+      {
+        "domain_suffix": [
+          "apps.apple.com",
+          "blobstore.apple.com",
+          "apple-dns.net",
+          "digicert.com",
+          "services.googleapis.cn",
+          "v2ex.com",
+          "medium.com",
+          "reddit.com",
+          "pixiv.net",
+          "cloudflare.com",
+          "cloudfront.net",
+          "6bcloud.top",
+          "fb.me",
+          "fbcdn.net",
+          "twimg.com",
+          "youtu.be",
+          "telegra.ph",
+          "telegram.org"
+        ],
+        "outbound": "🐮牛逼"
+      },
+      {
+        "domain_keyword": [
+          "baidu",
+          "alibaba",
+          "alicdn",
+          "alipay",
+          "taobao",
+          "tencent",
+          "bilibili",
+          "xiaomi",
+          "officecdn"
+        ],
+        "outbound": "DIRECT"
+      },
+      {
+        "domain_suffix": [
+          "apple.com",
+          "icloud.com",
+          "mzstatic.com",
+          "microsoft.com",
+          "office.com",
+          "qq.com",
+          "weixin.qq.com",
+          "wx.qq.com",
+          "qlogo.cn",
+          "gtimg.cn",
+          "servicewechat.com",
+          "wechatpay.cn",
+          "tencent-cloud.net",
+          "163.com",
+          "zhihu.com",
+          "iqiyi.com",
+          "jd.com",
+          "126.com",
+          "126.net",
+          "127.net",
+          "360buyimg.com",
+          "36kr.com",
+          "acfun.tv",
+          "air-matters.com",
+          "aixifan.com",
+          "amap.com",
+          "autonavi.com",
+          "bdimg.com",
+          "bdstatic.com",
+          "bilibili.com",
+          "bilivideo.com",
+          "caiyunapp.com",
+          "clouddn.com",
+          "cnbeta.com",
+          "cnbetacdn.com",
+          "cootekservice.com",
+          "csdn.net",
+          "ctrip.com",
+          "dgtle.com",
+          "dianping.com",
+          "douban.com",
+          "doubanio.com",
+          "duokan.com",
+          "easou.com",
+          "ele.me",
+          "feng.com",
+          "fir.im",
+          "frdic.com",
+          "g-cores.com",
+          "godic.net",
+          "gtimg.com",
+          "hongxiu.com",
+          "hxcdn.net",
+          "iciba.com",
+          "ifeng.com",
+          "ifengimg.com",
+          "ipip.net",
+          "jianshu.com",
+          "knewone.com",
+          "le.com",
+          "lecloud.com",
+          "lemicp.com",
+          "licdn.com",
+          "luoo.net",
+          "meituan.com",
+          "meituan.net",
+          "mi.com",
+          "miaopai.com",
+          "microsoftonline.com",
+          "miui.com",
+          "miwifi.com",
+          "mob.com",
+          "netease.com",
+          "office365.com",
+          "oschina.net",
+          "ppsimg.com",
+          "pstatp.com",
+          "qcloud.com",
+          "qdaily.com",
+          "qdmm.com",
+          "qhimg.com",
+          "qhres.com",
+          "qidian.com",
+          "qihucdn.com",
+          "qiniu.com",
+          "qiniucdn.com",
+          "qiyipic.com",
+          "qqurl.com",
+          "rarbg.to",
+          "ruguoapp.com",
+          "segmentfault.com",
+          "sinaapp.com",
+          "smzdm.com",
+          "snapdrop.net",
+          "sogou.com",
+          "sogoucdn.com",
+          "sohu.com",
+          "soku.com",
+          "speedtest.net",
+          "sspai.com",
+          "suning.com",
+          "taobao.com",
+          "tencent.com",
+          "tenpay.com",
+          "tianyancha.com",
+          "tmall.com",
+          "tudou.com",
+          "umetrip.com",
+          "upaiyun.com",
+          "upyun.com",
+          "veryzhun.com",
+          "weather.com",
+          "weibo.com",
+          "xiami.com",
+          "xiami.net",
+          "xiaomicp.com",
+          "ximalaya.com",
+          "xmcdn.com",
+          "xunlei.com",
+          "yhd.com",
+          "yihaodianimg.com",
+          "yinxiang.com",
+          "ykimg.com",
+          "youdao.com",
+          "youku.com",
+          "zealer.com",
+          "zhimg.com",
+          "zimuzu.tv",
+          "zoho.com",
+          "local",
+          "localhost",
+          "cn"
+        ],
+        "outbound": "DIRECT"
+      },
+      {
+        "ip_cidr": [
+          "127.0.0.0/8",
+          "172.16.0.0/12",
+          "192.168.0.0/16",
+          "10.0.0.0/8",
+          "17.0.0.0/8",
+          "100.64.0.0/10",
+          "198.18.0.0/16",
+          "224.0.0.0/4",
+          "::1/128",
+          "fc00::/7",
+          "fe80::/10"
+        ],
+        "outbound": "DIRECT"
+      },
+      {
+        "ip_cidr": [
+          "1.1.1.1/32",
+          "8.8.8.8/32",
+          "91.108.4.0/22",
+          "91.108.8.0/21",
+          "91.108.16.0/22",
+          "91.108.56.0/22",
+          "149.154.160.0/20",
+          "203.208.39.0/24",
+          "203.208.40.0/24",
+          "203.208.41.0/24",
+          "203.208.43.0/24",
+          "203.208.50.0/24"
+        ],
+        "outbound": "🐮牛逼"
+      },
+      {
+        "geoip": [
+          "cn",
+          "private"
+        ],
+        "outbound": "DIRECT"
+      }
+    ]
+  }
+}
