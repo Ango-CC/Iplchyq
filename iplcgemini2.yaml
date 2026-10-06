@@ -1,0 +1,1368 @@
+#!MANAGED-CONFIG https://iplcin.top
+
+#---------------------------------------------------#
+## 完整 144 个显式节点配置（适配 Surfing 透明代理）
+#---------------------------------------------------#
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+mode: rule
+log-level: info
+unified-delay: true
+tcp-concurrent: true
+ipv6: false
+keep-alive-interval: 360
+keep-alive-idle: 15
+disable-keep-alive: false
+
+clash-for-android:
+  append-system-dns: false
+
+profile:
+  store-selected: true
+
+dns:
+  enable: true
+  enhanced-mode: redir-host
+  cache-algorithm: lru
+  cache-max-size: 1
+  default-nameserver:
+    - 'udp://119.29.29.29:53'
+    - 'udp://223.5.5.5:53'
+  nameserver:
+    - 'udp://119.29.29.29:53'
+    - 'udp://223.5.5.5:53'
+    - 'tls://119.29.29.29'
+    - 'tls://223.5.5.5'
+    - 'https://dns.pub/dns-query'
+    - 'https://dns.alidns.com/dns-query'
+  proxy-server-nameserver:
+    - 'udp://119.29.29.29:53'
+    - 'udp://223.5.5.5:53'
+  proxy-server-nameserver-policy:
+    +.onein20260403-lv0.top:
+      - 'udp://119.29.29.29:53'
+      - 'udp://223.5.5.5:53'
+
+proxies:
+  # --- 端口 27001 ---
+  - name: "香港 HK 01 - 27001"
+    type: anytls
+    server: 27001.iplcwl.top
+    port: 27001
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "香港 HK 02 - 27001"
+    type: anytls
+    server: 27001.iplcwl.top
+    port: 27001
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 01 - 27001"
+    type: anytls
+    server: 27001.iplcwl.top
+    port: 27001
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 02 - 27001"
+    type: anytls
+    server: 27001.iplcwl.top
+    port: 27001
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 01 - 27001"
+    type: anytls
+    server: 27001.iplcwl.top
+    port: 27001
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 02 - 27001"
+    type: anytls
+    server: 27001.iplcwl.top
+    port: 27001
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  # --- 端口 27002 ---
+  - name: "香港 HK 01 - 27002"
+    type: anytls
+    server: 27002.iplcwl.top
+    port: 27002
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "香港 HK 02 - 27002"
+    type: anytls
+    server: 27002.iplcwl.top
+    port: 27002
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 01 - 27002"
+    type: anytls
+    server: 27002.iplcwl.top
+    port: 27002
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 02 - 27002"
+    type: anytls
+    server: 27002.iplcwl.top
+    port: 27002
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 01 - 27002"
+    type: anytls
+    server: 27002.iplcwl.top
+    port: 27002
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 02 - 27002"
+    type: anytls
+    server: 27002.iplcwl.top
+    port: 27002
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  # --- 端口 27003 ---
+  - name: "香港 HK 01 - 27003"
+    type: anytls
+    server: 27003.iplcwl.top
+    port: 27003
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "香港 HK 02 - 27003"
+    type: anytls
+    server: 27003.iplcwl.top
+    port: 27003
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 01 - 27003"
+    type: anytls
+    server: 27003.iplcwl.top
+    port: 27003
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 02 - 27003"
+    type: anytls
+    server: 27003.iplcwl.top
+    port: 27003
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 01 - 27003"
+    type: anytls
+    server: 27003.iplcwl.top
+    port: 27003
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 02 - 27003"
+    type: anytls
+    server: 27003.iplcwl.top
+    port: 27003
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  # --- 端口 27004 ---
+  - name: "香港 HK 01 - 27004"
+    type: anytls
+    server: 27004.iplcwl.top
+    port: 27004
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "香港 HK 02 - 27004"
+    type: anytls
+    server: 27004.iplcwl.top
+    port: 27004
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 01 - 27004"
+    type: anytls
+    server: 27004.iplcwl.top
+    port: 27004
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 02 - 27004"
+    type: anytls
+    server: 27004.iplcwl.top
+    port: 27004
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 01 - 27004"
+    type: anytls
+    server: 27004.iplcwl.top
+    port: 27004
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 02 - 27004"
+    type: anytls
+    server: 27004.iplcwl.top
+    port: 27004
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  # --- 端口 27005 ---
+  - name: "香港 HK 01 - 27005"
+    type: anytls
+    server: 27005.iplcwl.top
+    port: 27005
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "香港 HK 02 - 27005"
+    type: anytls
+    server: 27005.iplcwl.top
+    port: 27005
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 01 - 27005"
+    type: anytls
+    server: 27005.iplcwl.top
+    port: 27005
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 02 - 27005"
+    type: anytls
+    server: 27005.iplcwl.top
+    port: 27005
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 01 - 27005"
+    type: anytls
+    server: 27005.iplcwl.top
+    port: 27005
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 02 - 27005"
+    type: anytls
+    server: 27005.iplcwl.top
+    port: 27005
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  # --- 端口 27006 ---
+  - name: "香港 HK 01 - 27006"
+    type: anytls
+    server: 27006.iplcwl.top
+    port: 27006
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "香港 HK 02 - 27006"
+    type: anytls
+    server: 27006.iplcwl.top
+    port: 27006
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 01 - 27006"
+    type: anytls
+    server: 27006.iplcwl.top
+    port: 27006
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 02 - 27006"
+    type: anytls
+    server: 27006.iplcwl.top
+    port: 27006
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 01 - 27006"
+    type: anytls
+    server: 27006.iplcwl.top
+    port: 27006
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 02 - 27006"
+    type: anytls
+    server: 27006.iplcwl.top
+    port: 27006
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  # --- 端口 27007 ---
+  - name: "香港 HK 01 - 27007"
+    type: anytls
+    server: 27007.iplcwl.top
+    port: 27007
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "香港 HK 02 - 27007"
+    type: anytls
+    server: 27007.iplcwl.top
+    port: 27007
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 01 - 27007"
+    type: anytls
+    server: 27007.iplcwl.top
+    port: 27007
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 02 - 27007"
+    type: anytls
+    server: 27007.iplcwl.top
+    port: 27007
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 01 - 27007"
+    type: anytls
+    server: 27007.iplcwl.top
+    port: 27007
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 02 - 27007"
+    type: anytls
+    server: 27007.iplcwl.top
+    port: 27007
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  # --- 端口 27008 ---
+  - name: "香港 HK 01 - 27008"
+    type: anytls
+    server: 27008.iplcwl.top
+    port: 27008
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "香港 HK 02 - 27008"
+    type: anytls
+    server: 27008.iplcwl.top
+    port: 27008
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 01 - 27008"
+    type: anytls
+    server: 27008.iplcwl.top
+    port: 27008
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 02 - 27008"
+    type: anytls
+    server: 27008.iplcwl.top
+    port: 27008
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 01 - 27008"
+    type: anytls
+    server: 27008.iplcwl.top
+    port: 27008
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 02 - 27008"
+    type: anytls
+    server: 27008.iplcwl.top
+    port: 27008
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  # --- 端口 27009 ---
+  - name: "香港 HK 01 - 27009"
+    type: anytls
+    server: 27009.iplcwl.top
+    port: 27009
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "香港 HK 02 - 27009"
+    type: anytls
+    server: 27009.iplcwl.top
+    port: 27009
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 01 - 27009"
+    type: anytls
+    server: 27009.iplcwl.top
+    port: 27009
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 02 - 27009"
+    type: anytls
+    server: 27009.iplcwl.top
+    port: 27009
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 01 - 27009"
+    type: anytls
+    server: 27009.iplcwl.top
+    port: 27009
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 02 - 27009"
+    type: anytls
+    server: 27009.iplcwl.top
+    port: 27009
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  # --- 端口 27010 ---
+  - name: "香港 HK 01 - 27010"
+    type: anytls
+    server: 27010.iplcwl.top
+    port: 27010
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "香港 HK 02 - 27010"
+    type: anytls
+    server: 27010.iplcwl.top
+    port: 27010
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 01 - 27010"
+    type: anytls
+    server: 27010.iplcwl.top
+    port: 27010
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 02 - 27010"
+    type: anytls
+    server: 27010.iplcwl.top
+    port: 27010
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 01 - 27010"
+    type: anytls
+    server: 27010.iplcwl.top
+    port: 27010
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 02 - 27010"
+    type: anytls
+    server: 27010.iplcwl.top
+    port: 27010
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  # --- 端口 27011 ---
+  - name: "香港 HK 01 - 27011"
+    type: anytls
+    server: 27011.iplcwl.top
+    port: 27011
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "香港 HK 02 - 27011"
+    type: anytls
+    server: 27011.iplcwl.top
+    port: 27011
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 01 - 27011"
+    type: anytls
+    server: 27011.iplcwl.top
+    port: 27011
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 02 - 27011"
+    type: anytls
+    server: 27011.iplcwl.top
+    port: 27011
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 01 - 27011"
+    type: anytls
+    server: 27011.iplcwl.top
+    port: 27011
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 02 - 27011"
+    type: anytls
+    server: 27011.iplcwl.top
+    port: 27011
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  # --- 端口 27012 ---
+  - name: "香港 HK 01 - 27012"
+    type: anytls
+    server: 27012.iplcwl.top
+    port: 27012
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "香港 HK 02 - 27012"
+    type: anytls
+    server: 27012.iplcwl.top
+    port: 27012
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 01 - 27012"
+    type: anytls
+    server: 27012.iplcwl.top
+    port: 27012
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 02 - 27012"
+    type: anytls
+    server: 27012.iplcwl.top
+    port: 27012
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 01 - 27012"
+    type: anytls
+    server: 27012.iplcwl.top
+    port: 27012
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 02 - 27012"
+    type: anytls
+    server: 27012.iplcwl.top
+    port: 27012
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  # --- 端口 27013 ---
+  - name: "香港 HK 01 - 27013"
+    type: anytls
+    server: 27013.iplcwl.top
+    port: 27013
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "香港 HK 02 - 27013"
+    type: anytls
+    server: 27013.iplcwl.top
+    port: 27013
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 01 - 27013"
+    type: anytls
+    server: 27013.iplcwl.top
+    port: 27013
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 02 - 27013"
+    type: anytls
+    server: 27013.iplcwl.top
+    port: 27013
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 01 - 27013"
+    type: anytls
+    server: 27013.iplcwl.top
+    port: 27013
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 02 - 27013"
+    type: anytls
+    server: 27013.iplcwl.top
+    port: 27013
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  # --- 端口 27014 ---
+  - name: "香港 HK 01 - 27014"
+    type: anytls
+    server: 27014.iplcwl.top
+    port: 27014
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "香港 HK 02 - 27014"
+    type: anytls
+    server: 27014.iplcwl.top
+    port: 27014
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 01 - 27014"
+    type: anytls
+    server: 27014.iplcwl.top
+    port: 27014
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 02 - 27014"
+    type: anytls
+    server: 27014.iplcwl.top
+    port: 27014
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 01 - 27014"
+    type: anytls
+    server: 27014.iplcwl.top
+    port: 27014
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 02 - 27014"
+    type: anytls
+    server: 27014.iplcwl.top
+    port: 27014
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  # --- 端口 27015 ---
+  - name: "香港 HK 01 - 27015"
+    type: anytls
+    server: 27015.iplcwl.top
+    port: 27015
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "香港 HK 02 - 27015"
+    type: anytls
+    server: 27015.iplcwl.top
+    port: 27015
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 01 - 27015"
+    type: anytls
+    server: 27015.iplcwl.top
+    port: 27015
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 02 - 27015"
+    type: anytls
+    server: 27015.iplcwl.top
+    port: 27015
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 01 - 27015"
+    type: anytls
+    server: 27015.iplcwl.top
+    port: 27015
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 02 - 27015"
+    type: anytls
+    server: 27015.iplcwl.top
+    port: 27015
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  # --- 端口 27016 ---
+  - name: "香港 HK 01 - 27016"
+    type: anytls
+    server: 27016.iplcwl.top
+    port: 27016
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "香港 HK 02 - 27016"
+    type: anytls
+    server: 27016.iplcwl.top
+    port: 27016
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 01 - 27016"
+    type: anytls
+    server: 27016.iplcwl.top
+    port: 27016
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 02 - 27016"
+    type: anytls
+    server: 27016.iplcwl.top
+    port: 27016
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 01 - 27016"
+    type: anytls
+    server: 27016.iplcwl.top
+    port: 27016
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 02 - 27016"
+    type: anytls
+    server: 27016.iplcwl.top
+    port: 27016
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  # --- 端口 27017 ---
+  - name: "香港 HK 01 - 27017"
+    type: anytls
+    server: 27017.iplcwl.top
+    port: 27017
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "香港 HK 02 - 27017"
+    type: anytls
+    server: 27017.iplcwl.top
+    port: 27017
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 01 - 27017"
+    type: anytls
+    server: 27017.iplcwl.top
+    port: 27017
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 02 - 27017"
+    type: anytls
+    server: 27017.iplcwl.top
+    port: 27017
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 01 - 27017"
+    type: anytls
+    server: 27017.iplcwl.top
+    port: 27017
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 02 - 27017"
+    type: anytls
+    server: 27017.iplcwl.top
+    port: 27017
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  # --- 端口 27018 ---
+  - name: "香港 HK 01 - 27018"
+    type: anytls
+    server: 27018.iplcwl.top
+    port: 27018
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "香港 HK 02 - 27018"
+    type: anytls
+    server: 27018.iplcwl.top
+    port: 27018
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 01 - 27018"
+    type: anytls
+    server: 27018.iplcwl.top
+    port: 27018
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 02 - 27018"
+    type: anytls
+    server: 27018.iplcwl.top
+    port: 27018
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 01 - 27018"
+    type: anytls
+    server: 27018.iplcwl.top
+    port: 27018
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 02 - 27018"
+    type: anytls
+    server: 27018.iplcwl.top
+    port: 27018
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  # --- 端口 27019 ---
+  - name: "香港 HK 01 - 27019"
+    type: anytls
+    server: 27019.iplcwl.top
+    port: 27019
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "香港 HK 02 - 27019"
+    type: anytls
+    server: 27019.iplcwl.top
+    port: 27019
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 01 - 27019"
+    type: anytls
+    server: 27019.iplcwl.top
+    port: 27019
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 02 - 27019"
+    type: anytls
+    server: 27019.iplcwl.top
+    port: 27019
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 01 - 27019"
+    type: anytls
+    server: 27019.iplcwl.top
+    port: 27019
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 02 - 27019"
+    type: anytls
+    server: 27019.iplcwl.top
+    port: 27019
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  # --- 端口 27020 ---
+  - name: "香港 HK 01 - 27020"
+    type: anytls
+    server: 27020.iplcwl.top
+    port: 27020
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "香港 HK 02 - 27020"
+    type: anytls
+    server: 27020.iplcwl.top
+    port: 27020
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 01 - 27020"
+    type: anytls
+    server: 27020.iplcwl.top
+    port: 27020
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 02 - 27020"
+    type: anytls
+    server: 27020.iplcwl.top
+    port: 27020
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 01 - 27020"
+    type: anytls
+    server: 27020.iplcwl.top
+    port: 27020
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 02 - 27020"
+    type: anytls
+    server: 27020.iplcwl.top
+    port: 27020
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  # --- 端口 27021 ---
+  - name: "香港 HK 01 - 27021"
+    type: anytls
+    server: 27021.iplcwl.top
+    port: 27021
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "香港 HK 02 - 27021"
+    type: anytls
+    server: 27021.iplcwl.top
+    port: 27021
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 01 - 27021"
+    type: anytls
+    server: 27021.iplcwl.top
+    port: 27021
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 02 - 27021"
+    type: anytls
+    server: 27021.iplcwl.top
+    port: 27021
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 01 - 27021"
+    type: anytls
+    server: 27021.iplcwl.top
+    port: 27021
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 02 - 27021"
+    type: anytls
+    server: 27021.iplcwl.top
+    port: 27021
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  # --- 端口 27022 ---
+  - name: "香港 HK 01 - 27022"
+    type: anytls
+    server: 27022.iplcwl.top
+    port: 27022
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "香港 HK 02 - 27022"
+    type: anytls
+    server: 27022.iplcwl.top
+    port: 27022
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 01 - 27022"
+    type: anytls
+    server: 27022.iplcwl.top
+    port: 27022
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 02 - 27022"
+    type: anytls
+    server: 27022.iplcwl.top
+    port: 27022
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 01 - 27022"
+    type: anytls
+    server: 27022.iplcwl.top
+    port: 27022
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 02 - 27022"
+    type: anytls
+    server: 27022.iplcwl.top
+    port: 27022
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  # --- 端口 27023 ---
+  - name: "香港 HK 01 - 27023"
+    type: anytls
+    server: 27023.iplcwl.top
+    port: 27023
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "香港 HK 02 - 27023"
+    type: anytls
+    server: 27023.iplcwl.top
+    port: 27023
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 01 - 27023"
+    type: anytls
+    server: 27023.iplcwl.top
+    port: 27023
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 02 - 27023"
+    type: anytls
+    server: 27023.iplcwl.top
+    port: 27023
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 01 - 27023"
+    type: anytls
+    server: 27023.iplcwl.top
+    port: 27023
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 02 - 27023"
+    type: anytls
+    server: 27023.iplcwl.top
+    port: 27023
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  # --- 端口 27024 ---
+  - name: "香港 HK 01 - 27024"
+    type: anytls
+    server: 27024.iplcwl.top
+    port: 27024
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "香港 HK 02 - 27024"
+    type: anytls
+    server: 27024.iplcwl.top
+    port: 27024
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 01 - 27024"
+    type: anytls
+    server: 27024.iplcwl.top
+    port: 27024
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "日本 JP 02 - 27024"
+    type: anytls
+    server: 27024.iplcwl.top
+    port: 27024
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 01 - 27024"
+    type: anytls
+    server: 27024.iplcwl.top
+    port: 27024
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
+
+  - name: "新加坡 SG 02 - 27024"
+    type: anytls
+    server: 27024.iplcwl.top
+    port: 27024
+    password: 3c45e84a-4ad7-4eab-b786-f4393a74d6de
+    sni: www.samsung.com
+    skip-cert-verify: true
+    udp: false
